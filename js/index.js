@@ -4,7 +4,6 @@ $(document).ready(function() {
         $('.header__menu').toggleClass('header__menu-open');
         $('.header__burder-img').toggleClass('header__menu-remove');
         $('body').toggleClass('fixed-page');
-        $('header').toggleClass('skroll');
     });
 });
 

@@ -817,18 +817,20 @@ html {
     .header__searc{
         display: block;
     }
-    .header__menu.header__menu-open{
+    .header__menu-open.header__menu{
         display: flex;
         flex-direction: column;
+        background: linear-gradient(179.39deg, #FFFFFF 60.71%, #F5F5F5 99.36%);
     }
     .header__menu{
+        z-index: 5;
         padding: 0;
         display: none;
-        max-width: 120%;
+        width: 100%;
         position: absolute;
         top: 155px;
         left: 0;
-        width: 100%;
+        max-width: calc(100% - 0px);
     }
     .header__menu-right{
         display: block;
@@ -951,10 +953,7 @@ html {
     }
     .fixed-page{
         overflow: hidden;
-    }
-    .skroll{
-        overflow: auto;
-        height: 100vh;
+        height: 104vh;
     }
     .header__burder-img{
         width: 24px;
