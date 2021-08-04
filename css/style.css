@@ -1350,6 +1350,7 @@ html {
         display: flex;
         max-width: 100%;
         flex-direction: column;
+        overflow: scroll;
     }
     .header__menu{
         padding-top: 70px;
@@ -1493,7 +1494,7 @@ html {
         max-width: 320px;
     }
     .fixed-page{
-        overflow: hidden;
+        overflow: scroll;
         position: relative;
         height: 100vh;
     }
