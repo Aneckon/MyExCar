@@ -24,7 +24,9 @@ html {
     max-width: 150px;
     flex: 0 0 150px;
 }
-
+.header__button-remove{
+    display: none;
+}
 .header__menu{
     padding-left: 50px;
     padding-bottom: 19px;
@@ -1311,6 +1313,15 @@ html {
     .header{
         border-bottom: 1px solid #E0E0E0;
     }
+    .header__menu-remove{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        display: block;
+        background: url('../images/header/menu-remove.svg') no-repeat center;
+        width: 24px;
+        height: 24px;
+    }
     .header__inner{
         display: flex;
         justify-content: space-between;
@@ -1337,18 +1348,21 @@ html {
     }
     .header__menu-open.header__menu{
         display: flex;
+        max-width: 100%;
         flex-direction: column;
-        background: linear-gradient(179.39deg, #FFFFFF 60.71%, #F5F5F5 99.36%);
     }
     .header__menu{
-        z-index: 5;
-        padding: 0;
-        display: none;
-        width: 100%;
-        position: absolute;
-        top: 155px;
+        padding-top: 70px;
+        padding-left: 0;
+        position: fixed;
+        top: 0;
         left: 0;
-        max-width: calc(100% - 0px);
+        width: 100%;
+        height: 100vh;
+        z-index: 22;
+        background: #fff;
+        display: none;
+        transition: 1s;
     }
     .header__menu-right{
         display: block;
@@ -1377,6 +1391,7 @@ html {
         flex-direction: column;
         margin: 20px auto;
         text-align: center;
+        width: 100%;
     }
     .header__logo-img{
         max-width: 120px;
@@ -1445,18 +1460,26 @@ html {
     .header__menu-left::after{
         display: none;
     }
+    .header__button{
+        width: 100%;
+    }
     .header__btn{
         order: 1;
-        width: 290px;
+        width: 100%;
+        max-width: 290px;
         height: 48px;
+        margin: 0 auto;
     }
     .header__button-red{
         margin-bottom: 30px;
+        width: 100%;
     }
     .header__btn-red{
+        max-width: 290px;
         margin-right: 0px;
-        width: 290px;
+        width: 100%;
         height: 48px;
+        margin: 0 auto;
     }
     .heade__tel-link{
         padding-left: 0px;
@@ -1471,17 +1494,13 @@ html {
     }
     .fixed-page{
         overflow: hidden;
-        height: 104vh;
+        position: relative;
+        height: 100vh;
     }
     .header__burder-img{
         width: 24px;
         height: 24px;
         background: url('../images/header/menu.svg')no-repeat center;
-    }
-    .header__menu-remove{
-        width: 24px;
-        height: 24px;
-        background: url('../images/header/menu-remove.svg')no-repeat center;
     }
     .mainparallax__paralax{
         display: none;
