@@ -9,3 +9,9 @@ $(document).ready(function() {
 
 var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene);
+
+
+$('.faq__card').click(function(){
+    $(this).next().slideToggle();
+    $(this).toggleClass('minus');
+})
