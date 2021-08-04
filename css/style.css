@@ -1759,6 +1759,27 @@ html {
     .contacts__emain-item{
         font-size: 14px;
     }
+    .works{
+        padding: 30px;
+    }
+    .usedcars{
+        padding: 10px;
+    }
+    .usedcars__title{
+        margin-bottom: 10px;
+    }
+    .usedcars__button{
+        margin-bottom: 20px;
+    }
+    .faq{
+        margin-bottom: 40px;
+    }
+    .rightres{
+        bottom: -50px;
+    }
+    .price__item{
+        height: 250px;
+    }
 }
 @media (max-width: 420px){
     .price{
